@@ -1,0 +1,319 @@
+/*-- scss:defaults --*/
+
+// Cambria (Windows, macOS z Office); Caladea to darmowy odpowiednik o tych samych wymiarach liter
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$font-family-sans-serif: Cambria, Caladea, Georgia, serif;
+$presentation-heading-font: Cambria, Caladea, Georgia, serif;
+$presentation-font-size-root: 21px;
+$body-bg: #FFFFFF;
+$body-color: #262626;
+$link-color: #2F4F43;
+$presentation-heading-color: #2F4F43;
+$presentation-h2-font-size: 40px;
+
+// kolory prezentacji
+$zielen: #436B5C;
+$zielen-ciemna: #2F4F43;
+$zielen-jasna: #EEF3F0;
+$ramka: #9DB5AA;
+
+/*-- scss:rules --*/
+
+.reveal .slides section {
+  padding: 0;
+}
+
+.reveal p {
+  margin: 0 0 0.55em 0;
+  line-height: 1.45;
+}
+
+.reveal strong {
+  color: $zielen-ciemna;
+}
+
+.reveal .justify p {
+  text-align: justify;
+}
+
+.reveal .center-text p {
+  text-align: center;
+}
+
+.reveal ul {
+  margin: 0;
+  padding-left: 1.1em;
+}
+
+.reveal ul li {
+  margin-bottom: 1.1em;
+  line-height: 1.45;
+}
+
+// zielony pasek tytułu
+.reveal h2 {
+  position: absolute;
+  top: 27px;
+  left: 64px;
+  width: 1152px;
+  height: 70px;
+  margin: 0;
+  padding: 0 21px;
+  box-sizing: border-box;
+  background: $zielen;
+  color: #FAFBF9;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 70px;
+  text-transform: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reveal h2 .etap {
+  font-size: 17px;
+  font-weight: 700;
+  color: #D5E3DC;
+}
+
+// podtytuł „Etap 1”, „Etap 2”...
+.reveal .podtytul {
+  font-size: 43px;
+  font-weight: 700;
+  color: #262626;
+  margin: 0;
+}
+
+// slajd tytułowy
+.reveal .tytul-glowny {
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #262626;
+}
+
+.reveal .tytul-konferencja {
+  font-size: 21px;
+  font-weight: 700;
+  color: $zielen-ciemna;
+}
+
+// slajdy rozdziałowe (Przykład 1, Przykład 2)
+.reveal .rozdzial p {
+  color: #E4EEE9;
+}
+
+.reveal .rozdzial .nr {
+  font-size: 21px;
+  font-weight: 700;
+  color: #CFE0D7;
+}
+
+.reveal .rozdzial .nazwa {
+  font-size: 59px;
+  font-weight: 700;
+  color: #FAFBF9;
+  line-height: 1.15;
+}
+
+// ramki z tekstem
+.reveal .ramka {
+  border: 1px solid $ramka;
+  padding: 14px 20px;
+  box-sizing: border-box;
+}
+
+.reveal .ramka-jasna {
+  background: $zielen-jasna;
+  border: 1px solid $ramka;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.reveal .ramka-ciemna {
+  background: $zielen;
+  color: #FAFBF9;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.reveal .ramka-ciemna strong,
+.reveal .ramka-ciemna p {
+  color: #FAFBF9;
+}
+
+.reveal .ramka-jasna p,
+.reveal .ramka-ciemna p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.reveal .panel {
+  background: $zielen-jasna;
+  padding: 18px 24px;
+  box-sizing: border-box;
+}
+
+.reveal .etykieta {
+  font-weight: 700;
+  color: #5B6B64;
+  margin-bottom: 8px;
+}
+
+.reveal .strzalka {
+  color: $ramka;
+  font-size: 34px;
+  line-height: 1;
+}
+
+// schemat procedury
+.reveal .wf {
+  position: absolute;
+  top: 152px;
+  left: 64px;
+  width: 1152px;
+  height: 444px;
+  font-size: 16px;
+}
+
+.reveal .wf .etapy {
+  display: grid;
+  grid-template-columns: 247px 1fr 247px 1fr 247px 1fr 247px;
+  height: 321px;
+  align-items: stretch;
+}
+
+.reveal .wf .st {
+  border: 1px solid $ramka;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #FFFFFF;
+}
+
+.reveal .wf .hd {
+  background: $zielen;
+  color: #FAFBF9;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 12px 12px;
+  height: 49px;
+  box-sizing: border-box;
+}
+
+.reveal .wf .bd {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.reveal .wf .bd p {
+  margin: 0 0 1em 0;
+  line-height: 1.3;
+}
+
+.reveal .wf .ft {
+  background: $zielen-jasna;
+  color: $zielen-ciemna;
+  font-size: 14px;
+  padding: 10px 12px;
+  line-height: 1.3;
+}
+
+.reveal .wf .ar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reveal .wf .dol {
+  position: absolute;
+  top: 328px;
+  left: 1018px;
+}
+
+.reveal .wf .int {
+  position: absolute;
+  top: 377px;
+  left: 0;
+  width: 1152px;
+  height: 67px;
+  border: 1px solid $ramka;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.reveal .wf .int .hd {
+  height: 100%;
+  width: 226px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reveal .wf .int .tx {
+  padding-left: 26px;
+  font-size: 16px;
+}
+
+// wyróżnienie bieżącego etapu
+.reveal .aktywny-1 .s1,
+.reveal .aktywny-2 .s2,
+.reveal .aktywny-3 .s3,
+.reveal .aktywny-4 .s4 {
+  border: 3px solid $zielen-ciemna;
+  background: $zielen-jasna;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+// stopka i numer slajdu
+.reveal .footer {
+  font-size: 14px;
+  color: #7A8A83;
+}
+
+.reveal .slide-number {
+  font-size: 14px;
+  color: #7A8A83;
+  background: transparent;
+}
+
+.reveal .slide-number a {
+  color: #7A8A83;
+}
+
+// rozmiary tekstu
+.reveal .f24 { font-size: 24px; }
+.reveal .f20 { font-size: 20px; }
+
+.reveal .naglowek-panel {
+  font-size: 27px;
+  font-weight: 700;
+  color: $zielen-ciemna;
+}
+
+// kolorowe fragmenty tekstu zachowują swój kolor także po pogrubieniu
+.reveal span[style] strong {
+  color: inherit;
+}
+
+// stopka niżej, żeby nie nachodziła na mapy
+.reveal .footer {
+  bottom: 4px !important;
+  font-size: 12px !important;
+}
+
+// slajd tytułowy i slajdy rozdziałowe bez zielonego paska
+.reveal section.bez-tytulu h2 {
+  display: none;
+}

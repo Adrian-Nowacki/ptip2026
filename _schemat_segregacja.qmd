@@ -1,0 +1,34 @@
+```{=html}
+<div class="wf">
+  <div class="etapy">
+    <div class="st s1">
+      <div class="hd">I. Dane</div>
+      <div class="bd"><p>- obliczenie wskaźników segregacji</p><p>- przygotowanie zmiennych społeczno-demograficznych</p></div>
+      <div class="ft">tabela hrabstwo × rok</div>
+    </div>
+    <div class="ar"><svg width="32" height="19" viewBox="0 0 32 19"><path d="M0 6h20V0l12 9.5L20 19v-6H0z" fill="#9DB5AA"/></svg></div>
+    <div class="st s2">
+      <div class="hd">II. PCA</div>
+      <div class="bd"><p>- redukcja zbioru do najbardziej istotnych zmiennych</p></div>
+      <div class="ft">12 komponentów, ładunki, mapy wartości komponentów</div>
+    </div>
+    <div class="ar"><svg width="32" height="19" viewBox="0 0 32 19"><path d="M0 6h20V0l12 9.5L20 19v-6H0z" fill="#9DB5AA"/></svg></div>
+    <div class="st s3">
+      <div class="hd">III. Modelowanie</div>
+      <div class="bd"><p>- trening modeli</p><p>- ocena jakości modeli</p></div>
+      <div class="ft">wybrany model ExtraTrees</div>
+    </div>
+    <div class="ar"><svg width="32" height="19" viewBox="0 0 32 19"><path d="M0 6h20V0l12 9.5L20 19v-6H0z" fill="#9DB5AA"/></svg></div>
+    <div class="st s4">
+      <div class="hd">IV. SHAP</div>
+      <div class="bd"><p>- dekompozycja i interpretacja modelu za pomocą wartości SHAP</p></div>
+      <div class="ft">wykresy istotności i zależności, mapy wpływu</div>
+    </div>
+  </div>
+  <div class="dol"><svg width="19" height="32" viewBox="0 0 19 32"><path d="M6 0h7v20h6l-9.5 12L0 20h6z" fill="#9DB5AA"/></svg></div>
+  <div class="int">
+    <div class="hd">V. Interpretacja</div>
+    <div class="tx">odniesienie wyników do pierwotnych cech ludności za pomocą ładunków PCA</div>
+  </div>
+</div>
+```
